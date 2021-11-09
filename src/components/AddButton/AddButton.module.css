@@ -1,0 +1,35 @@
+.button {
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 50%;
+    background-color: #3F3D56;
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+}
+
+.button:active {
+    background-color: rgba(63, 61, 86, 0.8);
+    box-shadow: unset;
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+button:disabled,
+button[disabled]{
+    background-color: rgba(63, 61, 86, 0.5);
+    box-shadow: unset;
+    cursor:initial
+}
+
+button:disabled:active,
+button[disabled]:active{
+    -ms-transform: unset;
+    -webkit-transform: unset;
+    transform: unset;
+    background-color: rgba(63, 61, 86, 0.5);
+    box-shadow: unset;
+    cursor:initial
+}

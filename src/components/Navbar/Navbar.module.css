@@ -1,0 +1,26 @@
+.container {
+    height: 64px;
+    padding: 10px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #f56476;
+    
+
+}
+
+.title {
+    color: #fff;
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+}
+
+@media(min-width: 576px) {
+    .container {
+        margin-bottom: 30px;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    }
+}

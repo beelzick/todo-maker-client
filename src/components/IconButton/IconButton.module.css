@@ -1,0 +1,7 @@
+.button{
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}

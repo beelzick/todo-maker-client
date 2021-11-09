@@ -1,0 +1,26 @@
+.input {
+    outline: 0;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
+    height: 50px;
+    padding: 0 20px;
+    border-bottom: 1px solid rgba(0,0,0, 0.2) !important;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    flex-grow: 1;
+    color: rgba(0,0,0,0.55)
+}
+
+.input:disabled,
+.input[disabled]{
+    background-color: rgba(0,0,0,0.1)
+}
+.container {
+    width: 100%;
+    display: flex
+}
+
+.input::placeholder {
+    color: rgba(0,0,0,0.4) !important;
+}

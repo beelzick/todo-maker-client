@@ -1,0 +1,10 @@
+query User($_id: ID!) {
+    user(_id: $_id) {
+        _id
+        todos {
+            _id
+            content
+            done
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.container {
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0,0,0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    min-height: 50px;
+    color: rgba(0,0,0,0.55);
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+}
+
+.placeholder {
+    flex-grow: 1;
+}

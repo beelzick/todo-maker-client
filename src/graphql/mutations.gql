@@ -1,0 +1,28 @@
+mutation SetTodoDone($todoId: ID!, $userId: ID!, $done: Boolean!){
+    setTodoDone(userId: $userId, todoId: $todoId, done: $done) {
+        done
+        _id
+    }
+}
+
+mutation CreateTodo($userId: ID!, $content: String!){
+    createTodo(userId: $userId, content: $content) {
+        _id
+        todos {
+            done
+            _id
+            content
+        }
+    }
+}
+
+mutation DeleteTodo($userId: ID!, $todoId: ID!) {
+    deleteTodo(userId: $userId, todoId: $todoId) {
+        _id
+        todos {
+            _id
+            content
+            done
+        }
+    }
+}

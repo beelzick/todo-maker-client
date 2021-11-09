@@ -1,0 +1,11 @@
+.icon {
+    cursor: pointer;
+}
+
+.container {
+    width: 40px;
+    height: 100%;
+    appearance: none;
+    border: none;
+    background-color: unset;
+}

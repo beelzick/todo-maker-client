@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+@keyframes arrow-move {
+    0% {
+        transform: translateX(0px);
+    }
+    
+    50% {
+        transform: translateX(-15px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.arrow {
+    font-size: 50px;
+    color: #fff;
+    animation: arrow-move 2s infinite ease-in-out;
+}
