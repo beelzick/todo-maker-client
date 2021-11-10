@@ -132,6 +132,7 @@ export function useSetTodoDoneMutation(baseOptions?: Apollo.MutationHookOptions<
 export type SetTodoDoneMutationHookResult = ReturnType<typeof useSetTodoDoneMutation>;
 export type SetTodoDoneMutationResult = Apollo.MutationResult<SetTodoDoneMutation>;
 export type SetTodoDoneMutationOptions = Apollo.BaseMutationOptions<SetTodoDoneMutation, SetTodoDoneMutationVariables>;
+
 export const CreateTodoDocument = gql`
     mutation CreateTodo($userId: ID!, $content: String!) {
   createTodo(userId: $userId, content: $content) {
@@ -210,6 +211,7 @@ export function useDeleteTodoMutation(baseOptions?: Apollo.MutationHookOptions<D
 export type DeleteTodoMutationHookResult = ReturnType<typeof useDeleteTodoMutation>;
 export type DeleteTodoMutationResult = Apollo.MutationResult<DeleteTodoMutation>;
 export type DeleteTodoMutationOptions = Apollo.BaseMutationOptions<DeleteTodoMutation, DeleteTodoMutationVariables>;
+
 export const UserDocument = gql`
     query User($_id: ID!) {
   user(_id: $_id) {

@@ -1,12 +1,12 @@
-import styles from './Input.module.css'
+import styles from './AddTodo.module.css'
 import AddButton from '../../AddButton/AddButton'
 import { useAuth0 } from '@auth0/auth0-react'
 import { useState, ChangeEvent } from 'react'
 import { useCreateTodoMutation } from '../../../lib/generated-types'
 
-const Input = () => {
+const AddTodo = () => {
     const [content, setContent] = useState('')
-    const { isAuthenticated, user } = useAuth0()
+    const { isLoading, user } = useAuth0()
     const [createTodo] = useCreateTodoMutation()
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -33,12 +33,12 @@ const Input = () => {
                 name='content'
                 value={content}
                 placeholder='Add Todo...'
-                disabled={!isAuthenticated}
+                disabled={isLoading}
                 onChange={handleChange}
             />
-            <AddButton disabled={!isAuthenticated} onClick={handleClick} />
+            <AddButton disabled={isLoading} onClick={handleClick} />
         </div>
     )
 }
 
-export default Input
+export default AddTodo

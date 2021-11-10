@@ -25,10 +25,12 @@ const TodosSection = () => {
                 title='Your Todos'
                 todos={todosUncompleted}
             />
-            <SubSection
-                title='Completed'
-                todos={todosCompleted}
-            />
+            {todosCompleted[0] && (
+                <SubSection
+                    title='Completed'
+                    todos={todosCompleted}
+                />
+            )}
         </TodosSectionContainer>
     )
 }

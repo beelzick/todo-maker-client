@@ -10,6 +10,7 @@ interface Props {
 
 const Checkbox = ({ id, done }: Props) => {
     const [setTodo] = useSetTodoDoneMutation()
+
     const { user } = useAuth0()
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -28,11 +29,11 @@ const Checkbox = ({ id, done }: Props) => {
             },
         })
     }
-
+    
     return (
         <div className={styles.container}>
-            <input type='checkbox' defaultChecked={done} id={id} onChange={handleChange} />
-            <label htmlFor={id} />
+            <input type='checkbox' defaultChecked={done} id={id} onChange={handleChange} data-testid='checkbox' />
+            <label htmlFor={id} data-set={id} />
         </div>
     )
 }
