@@ -3,12 +3,12 @@ import NotLoggedIn from '../NotLoggedIn/NotLoggedIn'
 import CardContainer from './CardContainer/CardContainer'
 import Input from './AddTodo/AddTodo'
 import TodosSection from './TodosSection/TodosSection'
-import Loader from 'react-loader-spinner'
+import CardLoader from './CardLoader'
 
 const TodosCard = () => {
     const { isAuthenticated, isLoading } = useAuth0()
 
-    if (isLoading) return <Loader type='Oval' height={150} width={150} color='#f56476' />
+    if (isLoading) return <CardLoader />
 
     return (
         <CardContainer>
