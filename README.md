@@ -2,7 +2,7 @@
 
 ## General info
 
-Todo Maker - simple todo app with Auth0 authentication. It enables to create delete and mark as completed daily tasks. This repository is client side of the app. [Here][todoserver] you can check the apollo server.
+Todo Maker - simple todo app with Auth0 authentication. It enables to create delete and mark as completed daily tasks. This repository is client side of the app. [Here][todoserver] you can check the apollo server repo.
 
 ## Technology Stack
 
